@@ -60,7 +60,7 @@ export default {
                     ) : (
                         <Card>
                             <CardHeader>Info Box</CardHeader>
-                            <div className="content">
+                            <div className="content p-2">
                                 <TextControl
                                     label="Title :"
                                     value={attributes.title || ""}

@@ -1,7 +1,5 @@
 import './bootstrap';
-
-import exampleBlock from './blocks/example-block'
-import infoBox from './blocks/info-box'
+import registerLarabergBlocks from './register-blocks'
 
 const { dispatch, select } = Laraberg.wordpress.data
 
@@ -18,9 +16,8 @@ export function registerCategory(title, slug) {
 
 registerCategory('Test', 'test')
 
-// Registering Blocks
-exampleBlock()
-infoBox()
+// registerLarabergBlocks
+registerLarabergBlocks()
 
 // Initializing Laraberg
 Laraberg.init('post_content', {})
