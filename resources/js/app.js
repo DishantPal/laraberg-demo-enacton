@@ -22,19 +22,5 @@ registerCategory('Test', 'test')
 exampleBlock()
 infoBox()
 
-// Media Upload Function
-const mediaUpload = ({filesList, onFileChange}) => {
-    setTimeout(() => {
-        const uploadedFiles = Array.from(filesList).map(file => {
-            return {
-                id: file.name,
-                name: file.name,
-                url: `https://dummyimage.com/600x400/000/fff&text=${file.name}`
-            }
-        })
-        onFileChange(uploadedFiles)
-    }, 1000)
-}
-
 // Initializing Laraberg
-Laraberg.init('post_content', { mediaUpload })
+Laraberg.init('post_content', {})

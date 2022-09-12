@@ -133,8 +133,9 @@ export default {
                 <div class="row mb-2">
                     <div class="col-md-12">
                         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col-auto d-none d-lg-block">
+                            <div class="col-4 d-none d-lg-block">
                                 <img
+                                    height="300"
                                     src={props.attributes.image}
                                     alt={props.attributes.title}
                                 />
@@ -172,8 +173,9 @@ export default {
                                     {props.attributes.buttonText}
                                 </a>
                             </div>
-                            <div class="col-auto d-none d-lg-block">
+                            <div class="col-4 d-none d-lg-block">
                                 <img
+                                    height="300"
                                     src={props.attributes.image}
                                     alt={props.attributes.title}
                                 />
