@@ -5,6 +5,6 @@
 
     <hr>
 
-    {!! $post->content !!}
+    {!! $post->render('content') !!}
 
 </x-app>
