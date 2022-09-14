@@ -243,8 +243,9 @@ export default {
     },
     save: function (props) {
         let styleClass = "";
-        if (props.attributes.style == "left") styleClass = "text-end";
-        if (props.attributes.style == "right") styleClass = "text-start";
+        if (props.attributes.style == "left") styleClass = "text-start";
+        if (props.attributes.style == "right") styleClass = "text-end";
+        if (props.attributes.style == "center") styleClass = "text-center";
         return (
             <div id={props.attributes.section_id}>
                 <h2 class="h2">{props.attributes.section_title}</h2>
@@ -255,7 +256,10 @@ export default {
                             .sort((b1, b2) => b1 - b2)
                             .map((block, index) => (
                                 <div className={"col-lg-4 " + styleClass}>
-                                    <img src={block.image} alt={block.title} />
+                                    <div class="border rounded p-5">
+                                    <div class="mb-4 text-center">
+                                        <img src={block.image} alt={block.title} />
+                                    </div>
                                     <h2>{block.title}</h2>
                                     <p>{block.content}</p>
                                     <p>
@@ -266,6 +270,7 @@ export default {
                                             {block.buttonText}
                                         </a>
                                     </p>
+                                    </div>
                                 </div>
                             ))}
                     </div>

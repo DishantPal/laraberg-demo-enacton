@@ -23,7 +23,9 @@
 
         <div class="mb-3">
             <label for="post_content" class="form-label">Content</label>
-            <textarea class="form-control" name="content" id="post_content" cols="30" rows="10">{{isset($post) ? $post->content : old('content') }}</textarea>
+            <textarea class="form-control" name="content" id="post_content" cols="30" rows="10">
+                {{isset($post) ? $post->content : old('content') }}
+            </textarea>
             @error('content')
                 <div id="content_help" class="text-danger form-text">{{ $message }}</div>
             @enderror

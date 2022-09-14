@@ -130,57 +130,51 @@ export default {
     save: function (props) {
         if (props.attributes.style == "right") {
             return (
-                <div class="row mb-2">
-                    <div class="col-md-12">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col-4 d-none d-lg-block">
-                                <img
-                                    height="300"
-                                    src={props.attributes.image}
-                                    alt={props.attributes.title}
-                                />
-                            </div>
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h3 class="mb-0">{props.attributes.title}</h3>
-                                <p class="card-text mb-auto">
-                                    {props.attributes.description}
-                                </p>
-                                <a
-                                    href={props.attributes.buttonLink}
-                                    class="stretched-link"
-                                >
-                                    {props.attributes.buttonText}
-                                </a>
-                            </div>
-                        </div>
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-4 d-none d-lg-block">
+                        <img
+                            class="img-fluid"
+                            height="300"
+                            src={props.attributes.image}
+                            alt={props.attributes.title}
+                        />
+                    </div>
+                    <div class="col-8 p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">{props.attributes.title}</h3>
+                        <p class="card-text mb-auto">
+                            {props.attributes.description}
+                        </p>
+                        <a
+                            href={props.attributes.buttonLink}
+                            class="stretched-link"
+                        >
+                            {props.attributes.buttonText}
+                        </a>
                     </div>
                 </div>
             );
         } else if (props.attributes.style == "left") {
             return (
-                <div class="row mb-2">
-                    <div class="col-md-12">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h3 class="mb-0">{props.attributes.title}</h3>
-                                <p class="card-text mb-auto">
-                                    {props.attributes.description}
-                                </p>
-                                <a
-                                    href={props.attributes.buttonLink}
-                                    class="stretched-link"
-                                >
-                                    {props.attributes.buttonText}
-                                </a>
-                            </div>
-                            <div class="col-4 d-none d-lg-block">
-                                <img
-                                    height="300"
-                                    src={props.attributes.image}
-                                    alt={props.attributes.title}
-                                />
-                            </div>
-                        </div>
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-8 p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">{props.attributes.title}</h3>
+                        <p class="card-text mb-auto">
+                            {props.attributes.description}
+                        </p>
+                        <a
+                            href={props.attributes.buttonLink}
+                            class="stretched-link"
+                        >
+                            {props.attributes.buttonText}
+                        </a>
+                    </div>
+                    <div class="col-4 d-none d-lg-block">
+                        <img
+                            class="img-fluid"
+                            height="300"
+                            src={props.attributes.image}
+                            alt={props.attributes.title}
+                        />
                     </div>
                 </div>
             );
