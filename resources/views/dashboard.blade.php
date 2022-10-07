@@ -5,8 +5,8 @@
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">Laraberg brings the power of wordpress guttenber to laravel.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="{{route('posts.index')}}" class="btn btn-primary btn-lg px-4 gap-3">View Posts</a>
-            <a href="{{route('posts.create')}}" class="btn btn-outline-secondary btn-lg px-4">Create Post</a>
+            <a href="{{route('posts.index')}}" class="btn btn-primary btn-lg px-4 gap-3">View Posts Again</a>
+            <a href="{{route('posts.create')}}" class="btn btn-outline-secondary btn-lg px-4">Create Post Again</a>
           </div>
         </div>
       </div>
