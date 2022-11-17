@@ -58,6 +58,9 @@ addFilter(
     withInspectorControl
 );
 
+import { parse } from '@wordpress/block-serialization-default-parser';
+
+window.parseWpHtml = parse
 
 registerCategory("Test", "test");
 

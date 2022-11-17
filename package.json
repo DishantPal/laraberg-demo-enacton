@@ -12,6 +12,7 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "@wordpress/block-serialization-default-parser": "^4.22.0",
         "@wordpress/compose": "^5.20.0",
         "@wordpress/icons": "^9.7.0",
         "react": "^17.0.0"
